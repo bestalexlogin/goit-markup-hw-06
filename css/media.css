@@ -3,6 +3,7 @@
  Mobile 
 =========
  */
+
 @media screen and (min-width: 428px) {
   .container {
     max-width: 396px;
@@ -28,6 +29,7 @@
  Tablet 
 =========
  */
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 734px;
@@ -125,6 +127,26 @@
   }
 
   /* Main banner Section 1 */
+  .main-banner {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/main-banner-tablet-x1.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .main-banner {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/main-banner-tablet-x2.jpg);
+    }
+  }
+
   .main-banner-title {
     font-size: 56px;
     line-height: 1.07;
@@ -201,7 +223,24 @@
 
   /* Main banner Section 1 */
   .main-banner {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/main-banner-desktop-x1.jpg);
     padding: 188px 0;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .main-banner {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/main-banner-desktop-x2.jpg);
+    }
   }
 
   /*Advantages Section 2*/
