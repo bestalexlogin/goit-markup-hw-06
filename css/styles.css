@@ -189,7 +189,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
 .mobile-menu-item {
@@ -539,9 +539,6 @@ img {
 }
 
 .footer-container {
-  /*width: 1158px;*/
-  /*padding: 0 15px;*/
-  /*margin: 0 auto;*/
   align-items: center;
   margin-top: 0;
   margin-bottom: 72px;
@@ -805,6 +802,7 @@ img {
   background: var(--navyblue-modal, rgba(46, 47, 66, 0.4));
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: auto;
 }
 
 .is-hidden {
