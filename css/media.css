@@ -9,6 +9,10 @@
     max-width: 396px;
   }
 
+  .mobile-contacts-tel {
+    font-size: 36px;
+  }
+
   .modal {
     width: 392px;
   }
@@ -53,6 +57,11 @@
 
   .page-logo {
     margin-right: 120px;
+  }
+
+  .header-container {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .header-menu-list {
@@ -107,6 +116,8 @@
     flex-direction: column;
     gap: 12px;
     align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 
   .header-contacts-link {
@@ -154,8 +165,6 @@
 
   /*Advantages Section 2*/
   .advantages-list {
-    display: flex;
-    flex-wrap: wrap;
     gap: 72px 24px;
   }
 
@@ -183,15 +192,33 @@
 
   /*Footer Section 6*/
   .footer-wrap {
+    justify-content: flex-start;
     gap: 72px 24px;
   }
 
   .footer-container {
-    margin-bottom: 0;
+    align-items: flex-start;
   }
 
   .footer-container-socials {
-    margin-bottom: 0px;
+    align-items: flex-start;
+  }
+
+  .footer-container-subscribe {
+    justify-content: left;
+    align-items: flex-start;
+  }
+
+  .subscribe-form {
+    flex-direction: row;
+  }
+
+  .subscribe-form-input {
+    width: 264px;
+  }
+
+  .subscribe-form-button {
+    margin: 0;
   }
 }
 
@@ -208,6 +235,11 @@
   .header-contacts {
     display: flex;
     align-items: center;
+  }
+
+  .header-container {
+    margin-top: 17px;
+    margin-bottom: 17px;
   }
 
   .header-contacts-list {
@@ -250,7 +282,6 @@
   }
 
   .advantages-list {
-    display: flex;
     gap: 24px;
   }
 
@@ -333,6 +364,17 @@
 
   /*Footer Section 6*/
   .footer-wrap {
-    justify-content: space-between;
+    justify-content: normal;
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+
+  .page-footer-text {
+    width: 264px;
+  }
+
+  .footer-container-socials {
+    margin-left: 120px;
+    margin-right: 80px;
   }
 }

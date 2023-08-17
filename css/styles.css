@@ -212,7 +212,7 @@ img {
 
 .mobile-contacts-tel {
   color: var(--iris, #4d5ae5);
-  font-size: 36px;
+  font-size: 25px;
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.02em;
@@ -335,8 +335,10 @@ img {
   padding: 96px 16px;
 }
 
-.advantages-item {
-  margin-bottom: 72px;
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px;
 }
 
 .advantages-item:last-child {
@@ -514,14 +516,16 @@ img {
 
 .footer-wrap {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
-  align-items: baseline;
+  gap: 72px;
 }
 
 .footer-container {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-top: 0;
-  margin-bottom: 72px;
 }
 
 .page-footer-logo {
@@ -545,11 +549,13 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  max-width: 264px;
+  max-width: 268px;
 }
 
 .footer-container-socials {
-  margin-bottom: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-social-text {
@@ -591,6 +597,13 @@ img {
   fill: var(--cloud);
 }
 
+.footer-container-subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
 .subscribe-text {
   margin-bottom: 16px;
   font-weight: 500;
@@ -602,21 +615,25 @@ img {
 
 .subscribe-form {
   display: flex;
+  gap: 16px;
   flex-wrap: wrap;
-  gap: 24px;
+  flex-direction: column;
+  width: 100%;
 }
 
 .subscribe-form-input {
-  width: 264px;
+  display: block;
+  width: 100%;
   height: 40px;
-  border: 1px solid #ffffff;
   background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  padding-left: 16px;
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  padding-left: 16px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
   color: #ffffff;
 }
 
@@ -627,9 +644,6 @@ img {
 .subscribe-form-button {
   min-width: 165px;
   height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -640,6 +654,10 @@ img {
   background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .subscribe-form-button:hover,
