@@ -63,7 +63,7 @@ ol {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -87,6 +87,7 @@ img {
   display: flex;
   margin-top: 24px;
   margin-bottom: 22px;
+  position: relative;
 }
 
 .header-navigation {
@@ -112,7 +113,6 @@ img {
   position: absolute;
   padding: 0;
   right: 16px;
-  top: 24px;
   cursor: pointer;
   border: none;
   outline: none;
@@ -672,14 +672,15 @@ img {
 
 /*Page main portfolio*/
 .portfolio-section {
-  padding: 96px 0 120px 0;
+  padding: 48px 0 48px 0;
 }
 
 .portfolio-button-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
   gap: 24px;
-  margin-bottom: 72px;
+  margin-bottom: 48px;
 }
 
 .portfolio-button-item:hover,
@@ -698,13 +699,19 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  padding: 12px 24px;
+  padding: 8px 16px;
   border: 1px solid var(--cornflower);
   border-radius: 4px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-button-active {
+  border-radius: 4px;
+  background: var(--ocean, #404bbf);
+  color: var(--white, #fff);
 }
 
 .portfolio-btns-items:hover,
@@ -734,8 +741,9 @@ img {
 
 .portfolio-about-list {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  gap: 48px 24px;
+  gap: 72px;
 }
 
 .portfolio-cover-wrap {
@@ -766,7 +774,6 @@ img {
 .portfolio-about-item {
   border: 1px solid var(--cornflower);
   background: var(--white);
-  width: calc((100% - 24px * 2) / 3);
 }
 
 .portfolio-about-title {

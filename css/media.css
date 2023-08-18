@@ -220,6 +220,30 @@
   .subscribe-form-button {
     margin: 0;
   }
+
+  /*Page main portfolio*/
+  .portfolio-section {
+    padding: 64px 0 96px 0;
+  }
+
+  .portfolio-about-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+
+  .portfolio-about-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .portfolio-button-list {
+    justify-content: center;
+    margin-bottom: 64px;
+  }
+
+  .portfolio-btns-items {
+    padding: 12px 24px;
+  }
 }
 
 /*
@@ -376,5 +400,22 @@
   .footer-container-socials {
     margin-left: 120px;
     margin-right: 80px;
+  }
+
+  /*Page main portfolio*/
+  .portfolio-section {
+    padding: 100px 0 120px 0;
+  }
+
+  .portfolio-about-list {
+    gap: 48px 24px;
+  }
+
+  .portfolio-about-item {
+    width: calc((100% - 24px * 2) / 3);
+  }
+
+  .portfolio-button-list {
+    margin-bottom: 72px;
   }
 }
